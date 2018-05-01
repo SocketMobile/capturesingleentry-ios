@@ -60,7 +60,7 @@
     // portal when registering your application
     // for an AppKey
     SKTAppInfo* appInfo = [SKTAppInfo new];
-    appInfo.BundleID = @"ios:com.socketmobile.SingleEntry";
+    appInfo.AppID = @"ios:com.socketmobile.SingleEntry";
     appInfo.DeveloperID = @"bb57d8e1-f911-47ba-b510-693be162686a";
     appInfo.AppKey = @"MCwCFAcji6oT1soQeryg+x4Eh65bGNx2AhRtuPKEJ7aHWXKvv8hNVB291CYztQ==";
     SKTCaptureHelper* capture = [SKTCaptureHelper sharedInstance];
