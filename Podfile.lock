@@ -1,11 +1,11 @@
 PODS:
-  - SKTCaptureObjC (1.0.65)
+  - SKTCaptureObjC (1.0.117)
 
 DEPENDENCIES:
   - SKTCaptureObjC (~> 1.0)
 
 SPEC CHECKSUMS:
-  SKTCaptureObjC: a94c8c3a8287d53337e150a7f7c099a4de819382
+  SKTCaptureObjC: fb0ce9026f134aec07d1cc327bdccdc0b4f0d8bf
 
 PODFILE CHECKSUM: d60eaaf486e5e83ca678023e2c9f430fbd9fada2
 
