@@ -24,7 +24,7 @@ The Socket Mobile Capture SDK is required in order to compile this sample.
 The following steps show how to get and build this project.
 
 Open a Terminal window and clone the project:
-`git clone git@github.com:SocketMobile/capturesingleentry-ios.git && cd capturesingleentry-ios`
+`$git clone https://github.com/SocketMobile/capturesingleentry-ios.git && cd capturesingleentry-ios`
 
 Then install Socket Mobile Capture SDK:
 `pod install`
