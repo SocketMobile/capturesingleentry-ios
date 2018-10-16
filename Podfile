@@ -1,3 +1,3 @@
 
 target 'SingleEntry'
-  pod 'SKTCaptureObjC', '~> 1.0'
+  pod 'SKTCaptureObjC', '~> 1.1'
