@@ -179,7 +179,6 @@
 				E74F115D1FD091B8002B22FD /* Sources */,
 				E74F115E1FD091B8002B22FD /* Frameworks */,
 				E74F115F1FD091B8002B22FD /* Resources */,
-				4E6D7185524974D35DE383B4 /* [CP] Embed Pods Frameworks */,
 				10458271B5E83D28A7A946E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -311,32 +310,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SingleEntry/Pods-SingleEntry-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SingleEntry/Pods-SingleEntry-resources.sh",
 				"${PODS_ROOT}/SKTCaptureObjC/socketmobilepublickey.pem",
 				"${PODS_ROOT}/SKTCaptureObjC/softScanBeep.wav",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/socketmobilepublickey.pem",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/softScanBeep.wav",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleEntry/Pods-SingleEntry-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E6D7185524974D35DE383B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleEntry/Pods-SingleEntry-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SingleEntry/Pods-SingleEntry-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		810F6462B887F975B96F114E /* [CP] Check Pods Manifest.lock */ = {
