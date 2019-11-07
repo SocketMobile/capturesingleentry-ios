@@ -42,6 +42,8 @@
 	<string>SoftScan uses the camera to scan a barcode</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>SingleEntry would like access to Bluetooth to connect to barcode and RFID readers</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>SingleEntry would like access to Bluetooth to connect to barcode and RFID readers</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
