@@ -35,12 +35,12 @@
             NSLog(@"settings SoftScan returns: %ld", result);
         }];
         
-        NSString* d600Favorites = @"";
-        if (self.settings.d600Supported) {
-            d600Favorites = @"*";
+        NSString* NFCFavorites = @"";
+        if (self.settings.NFCSupported) {
+            NFCFavorites = @"*";
         }
-        [_deviceManager setFavoriteDevices:d600Favorites completionHandler:^(SKTResult result) {
-            NSLog(@"setting Favorites to %@ returns: %ld", d600Favorites, result);
+        [_deviceManager setFavoriteDevices:NFCFavorites completionHandler:^(SKTResult result) {
+            NSLog(@"setting Favorites to %@ returns: %ld", NFCFavorites, result);
         }];
     }
 }
@@ -51,7 +51,7 @@
     self.triggerButton.hidden=YES;
     self.settings = [SettingsModel new];
     self.settings.softScanEnabled = FALSE;
-    self.settings.d600Supported = FALSE;
+    self.settings.NFCSupported = FALSE;
     self.deviceManager = nil;
     
     // Fill out the AppInfo with the
@@ -223,13 +223,13 @@
 
     self.deviceManager = deviceManager;
     // check if the device manager has a favorite
-    // and if yes that means we support the D600
+    // and if yes that means we support NFC devices such as the D600 and S550
     [deviceManager getFavoriteDevicesWithCompletionHandler:^(SKTResult result, NSString *favorites) {
         if (SKTSUCCESS(result)) {
             if (favorites && favorites.length) {
-                self.settings.d600Supported = TRUE;
+                self.settings.NFCSupported = TRUE;
             }
-            NSLog(@"D600 Supported: %d", self.settings.d600Supported);
+            NSLog(@"NFC Supported: %d", self.settings.NFCSupported);
         } else {
             NSLog(@"getFavoriteDevices returns: %ld", result);
         }

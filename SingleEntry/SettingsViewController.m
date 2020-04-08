@@ -11,7 +11,7 @@
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *softScanEnabledSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *d600SupportSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *NFCSupportSwitch;
 @end
 
 @implementation SettingsViewController
@@ -21,7 +21,7 @@
     [self.softScanEnabledSwitch
      setOn:self.model.softScanEnabled
      animated:TRUE];
-    [self.d600SupportSwitch setOn:self.model.d600Supported animated:TRUE];
+    [self.NFCSupportSwitch setOn:self.model.NFCSupported animated:TRUE];
     
     // get Capture version
     SKTCaptureHelper* capture = [SKTCaptureHelper sharedInstance];
@@ -46,8 +46,8 @@
     self.model.softScanEnabled = self.softScanEnabledSwitch.isOn;
 }
 
-- (IBAction)didChangeD600SupportSwitch:(id)sender {
-    self.model.d600Supported = self.d600SupportSwitch.isOn;
+- (IBAction)didChangeNFCSupportSwitch:(id)sender {
+    self.model.NFCSupported = self.NFCSupportSwitch.isOn;
 }
 
 /*

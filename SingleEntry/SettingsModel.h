@@ -11,6 +11,6 @@
 // edited in the Settings view
 @interface SettingsModel : NSObject
 @property (nonatomic) BOOL softScanEnabled;
-@property (nonatomic) BOOL d600Supported;
+@property (nonatomic) BOOL NFCSupported;
 @end
 
