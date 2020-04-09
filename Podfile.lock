@@ -1,5 +1,5 @@
 PODS:
-  - SKTCaptureObjC (1.2.9)
+  - SKTCaptureObjC (1.2.36)
 
 DEPENDENCIES:
   - SKTCaptureObjC (~> 1.2)
@@ -9,7 +9,7 @@ SPEC REPOS:
     - SKTCaptureObjC
 
 SPEC CHECKSUMS:
-  SKTCaptureObjC: 98d122dd314f9dd14a033e74fb3e69b86ac1a18a
+  SKTCaptureObjC: fa944f2856c5d2c02d262b7fe9a070b4fef44698
 
 PODFILE CHECKSUM: 53333d87929f2a88809887c67c9e692e3504aa2a
 
